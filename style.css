@@ -19,14 +19,13 @@ h1 {
 
 .container {
     padding: 5px 10px;
-    display: table;
-    table-layout: fixed;
     width: 100%;
 }
 
 .item {
-    display: table-cell;
+    float: left;
     padding: 10px;
+    width: calc(100% / 3);
 }
 
 ul.offer,
@@ -91,11 +90,8 @@ li:last-child {
 }
 
 @media (max-width: 800px) {
-    .container {
-        display: block;
-    }
-
     .item {
-        display: block;
+        float: none;
+        width: 100%;
     }
 }
