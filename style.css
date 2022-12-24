@@ -52,10 +52,11 @@ li {
     text-align: center;
 }
 
-li:first-child {
+li:first-child, li:first-child h2 {
     border-top: none;
     color: white;
     font-size: 25px;
+    font-weight: normal;
 }
 
 ul.offer li:first-child {
