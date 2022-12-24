@@ -1,6 +1,7 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,9 +19,6 @@ h1 {
 
 .container {
     padding: 5px 10px;
-}
-
-.content {
     display: table;
     table-layout: fixed;
     width: 100%;
@@ -92,7 +90,7 @@ li:last-child {
 }
 
 @media (max-width: 800px) {
-    .content {
+    .container {
         display: block;
     }
 
