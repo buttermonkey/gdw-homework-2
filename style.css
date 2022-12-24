@@ -22,8 +22,7 @@ h1 {
     width: 100%;
 }
 
-ul.offer,
-ul.active-offer {
+.offer {
     float: left;
     margin: 10px;
     width: calc((100% - 60px) / 3);
@@ -34,11 +33,11 @@ ul.active-offer {
     list-style: none;
 }
 
-ul.offer:hover {
+.offer:hover {
     box-shadow: 5px 7px 15px black;
 }
 
-ul.active-offer {
+.active {
     box-shadow: 5px 7px 15px black;
 }
 
@@ -55,11 +54,11 @@ li:first-child, li:first-child h2 {
     font-weight: normal;
 }
 
-ul.offer li:first-child {
+li:first-child {
     background-color: #111;
 }
 
-ul.active-offer li:first-child {
+ul.active li:first-child {
     background-color: #4eaf58;
 }
 
@@ -87,9 +86,9 @@ li:last-child {
 }
 
 @media (max-width: 800px) {
-    ul.offer,
-    ul.active-offer {
+    .offer {
         float: none;
         width: calc(100% - 20px);
+        margin-bottom: 20px;
     }
 }
