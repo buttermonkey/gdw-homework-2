@@ -22,14 +22,11 @@ h1 {
     width: 100%;
 }
 
-.item {
-    float: left;
-    padding: 10px;
-    width: calc(100% / 3);
-}
-
 ul.offer,
 ul.active-offer {
+    float: left;
+    margin: 10px;
+    width: calc((100% - 60px) / 3);
     background-color: white;
     color: #555;
     font-size: 0.6em;
@@ -90,8 +87,9 @@ li:last-child {
 }
 
 @media (max-width: 800px) {
-    .item {
+    ul.offer,
+    ul.active-offer {
         float: none;
-        width: 100%;
+        width: calc(100% - 20px);
     }
 }
