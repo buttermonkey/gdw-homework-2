@@ -91,4 +91,7 @@ li:last-child {
         width: calc(100% - 20px);
         margin-bottom: 20px;
     }
+    .container {
+        padding-bottom: 0;
+    }
 }
