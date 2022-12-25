@@ -18,14 +18,13 @@ h1 {
 }
 
 .container {
-    padding: 5px 10px;
-    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
 }
 
 .offer {
-    float: left;
-    margin: 10px;
-    width: calc((100% - 60px) / 3);
+    width: 100%;
     background-color: white;
     color: #555;
     font-size: 0.6em;
@@ -86,9 +85,7 @@ li:last-child {
 }
 
 @media (max-width: 800px) {
-    .offer {
-        float: none;
-        width: calc(100% - 20px);
-        margin-bottom: 20px;
+    .container {
+        flex-wrap: wrap;
     }
 }
