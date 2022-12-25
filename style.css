@@ -37,10 +37,7 @@ ul.offer {
     list-style: none;
 }
 
-ul.offer:hover {
-    box-shadow: 5px 7px 15px black;
-}
-
+ul.offer:hover,
 ul.active {
     box-shadow: 5px 7px 15px black;
 }
