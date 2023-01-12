@@ -13,19 +13,21 @@ body {
 h1 {
     color: white;
     font-size: 1em;
-    padding: 10px 0;
+    padding-block: 10px;
+    padding-inline: 0;
     text-align: center;
 }
 
 .container {
-    padding: 5px 10px;
-    width: 100%;
+    padding-block: 5px;
+    padding-inline: 10px;
+    inline-size: 100%;
 }
 
 .offer {
     float: left;
     margin: 10px;
-    width: calc((100% - 60px) / 3);
+    inline-size: calc((100% - 60px) / 3);
     background-color: white;
     color: #555;
     font-size: 0.6em;
@@ -42,13 +44,13 @@ h1 {
 }
 
 li {
-    border-top: #f4f4f4 solid 1px;
+    border-block-start: #f4f4f4 solid 1px;
     padding: 15px 10px;
     text-align: center;
 }
 
 li:first-child, li:first-child h2 {
-    border-top: none;
+    border-block-start: none;
     color: white;
     font-size: 25px;
     font-weight: normal;
@@ -64,13 +66,13 @@ ul.active li:first-child {
 
 li:nth-child(2) {
     background-color: #f4f4f4;
-    border-top: none;
+    border-block-start: none;
     font-size: 20px;
 }
 
 li:last-child {
     background-color: #f4f4f4;
-    border-top: none;
+    border-block-start: none;
 }
 
 .value {
@@ -88,10 +90,10 @@ li:last-child {
 @media (max-width: 800px) {
     .offer {
         float: none;
-        width: calc(100% - 20px);
-        margin-bottom: 20px;
+        inline-size: calc(100% - 20px);
+        margin-block-end: 20px;
     }
     .container {
-        padding-bottom: 0;
+        padding-block-end: 0;
     }
 }
